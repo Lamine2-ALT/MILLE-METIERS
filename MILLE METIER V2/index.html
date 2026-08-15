@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<!-- 🔥 CORRECTION RESPONSIVE -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MILLE MÉTIERS — Le bon professionnel au bon moment</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<!-- 🔥 CHEMINS CORRIGÉS POUR RENDER -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="conteneur topbar-inner">
+    <span>🇸🇳 Plateforme sénégalaise de mise en relation</span>
+    <div class="topbar-droite">
+      <a href="tel:+221772051466">📞 +221 77 205 14 66</a>
+      <a href="https://wa.me/221772051466?text=Bonjour%20Mille%20M%C3%A9tiers" class="wa-lien">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<header id="entete">
+  <div class="conteneur nav-inner">
+    <a href="#accueil" class="logo">
+      <div class="logo-marque">M<span class="pt"></span></div>
+      <div class="logo-texte"><strong>MILLE MÉTIERS</strong><small>Le bon pro, au bon moment</small></div>
+    </a>
+    <nav id="nav-principal">
+      <a href="#accueil" class="nav-lien actif">Accueil</a>
+      <a href="#professionnels" class="nav-lien">Trouver un pro</a>
+      <a href="#devenir-pro" class="nav-lien">Je suis pro</a>
+      <a href="#comment" class="nav-lien">Comment ça marche</a>
+      <a href="#faq" class="nav-lien">FAQ</a>
+    </nav>
+    <button class="btn btn-orange btn-petit btn-cta js-ouvrir-prestation">Faire une demande</button>
+    <button class="burger" id="btn-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div id="menu-mobile">
+    <a href="#accueil">Accueil</a>
+    <a href="#professionnels">Trouver un pro</a>
+    <a href="#devenir-pro">Je suis pro</a>
+    <a href="#comment">Comment ça marche</a>
+    <a href="#faq">FAQ</a>
+    <button class="btn btn-orange btn-bloc js-ouvrir-prestation">Faire une demande</button>
+  </div>
+</header>
+
+<section id="accueil" class="hero">
+  <div class="conteneur hero-inner">
+    <div>
+      <div class="eyebrow reveal">Disponible partout au Sénégal</div>
+      <h1 class="reveal">Un besoin ?<br><span class="surligne">Trouvez la bonne personne.</span></h1>
+      <p class="hero-soustitre reveal">Plombier, électricien, nounou, chauffeur... Trouvez un professionnel adapté à votre besoin, même si ce n'est pas dans la liste !</p>
+      <div class="hero-actions reveal">
+        <button class="btn btn-orange btn-grand js-ouvrir-prestation">🔧 Trouver un professionnel</button>
+        <a href="#devenir-pro" class="btn btn-contour btn-grand">Je suis professionnel</a>
+      </div>
+      <ul class="hero-confiance reveal">
+        <li>✔ Sans inscription pour les clients</li>
+        <li>✔ Paiement uniquement après acceptation</li>
+      </ul>
+    </div>
+    <div class="hero-vis reveal">
+      <div class="anneau anneau-1"></div>
+      <div class="hero-mosaique">
+        <div class="mosaique-tuile" style="--d:0s">🚿<small>Plombier</small></div>
+        <div class="mosaique-tuile" style="--d:.4s">⚡<small>Électricien</small></div>
+        <div class="mosaique-tuile" style="--d:.8s">👶<small>Nounou</small></div>
+        <div class="mosaique-tuile" style="--d:.2s">🧹<small>Ménage</small></div>
+        <div class="mosaique-tuile" style="--d:.6s">🍲<small>Cuisine</small></div>
+        <div class="mosaique-tuile" style="--d:1s">🚗<small>Chauffeur</small></div>
+      </div>
+      <div class="f-badge f1"><div class="avatar-mini" style="--teinte:#0E5AA7">MF</div><div><strong>Moussa Fall</strong><br><small>Électricien · Dakar</small></div></div>
+      <div class="f-badge f2"><span class="pastille-verte"></span><div><strong>● Dispo</strong><br><small>★★★★★ 4,9/5</small></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="defile-metiers">
+  <div class="defile-ruban" id="bandeau-contenu"></div>
+</div>
+
+<section class="section section-grise reveal" id="besoin">
+  <div class="conteneur">
+    <div class="entete-section centre">
+      <div class="eyebrow">Votre besoin</div>
+      <h2>Que recherchez-vous ?</h2>
+    </div>
+    <div class="grille-besoin">
+      <div class="carte-besoin carte-besoin-chaude js-ouvrir-prestation">
+        <div class="tuile-icone tuile-orangee">🔧</div>
+        <div class="carte-besoin-type">Prestation</div>
+        <h3>J'ai besoin d'un professionnel pour une intervention</h3>
+        <div class="chips-exemples"><span>Plombier</span><span>Électricien</span><span>Menuisier</span><span>Maçon</span><span>✨ Autre...</span></div>
+        <button class="btn btn-orange btn-bloc">Trouver un professionnel</button>
+      </div>
+      <div class="carte-besoin js-ouvrir-placement">
+        <div class="tuile-icone tuile-bleue">👤</div>
+        <div class="carte-besoin-type">Placement</div>
+        <h3>Je recherche une personne pour un emploi (Nounou, Ménage...)</h3>
+        <div class="chips-exemples"><span>Nounou</span><span>Aide-ménagère</span><span>Gardien</span><span>Chauffeur</span><span>✨ Autre...</span></div>
+        <button class="btn btn-marine btn-bloc">Déposer une demande</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="conteneur">
+    <div class="entete-section centre">
+      <div class="eyebrow">Catégories</div>
+      <h2>Les métiers les plus recherchés</h2>
+    </div>
+    <div class="grille-metiers" id="grille-metiers"></div>
+    <div class="centre mt-32"><button class="btn btn-contour" id="btn-tous-metiers">Voir tous les métiers →</button></div>
+  </div>
+</section>
+
+<section class="section stats reveal" id="statistiques">
+  <div class="conteneur">
+    <div class="grille-stats">
+      <div><span class="stat-nombre" data-cible="150" data-suffixe="+">0</span><span class="stat-label">Professionnels inscrits</span></div>
+      <div><span class="stat-nombre" data-cible="320" data-suffixe="+">0</span><span class="stat-label">Demandes traitées</span></div>
+      <div><span class="stat-nombre" data-cible="25" data-suffixe="">0</span><span class="stat-label">Métiers</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="professionnels" class="section section-grise reveal">
+  <div class="conteneur">
+    <div class="entete-section centre">
+      <div class="eyebrow">Ils sont prêts</div>
+      <h2>Des professionnels proches de vous</h2>
+    </div>
+    <div class="barre-filtres">
+      <div class="champ-filtre"><label for="filtre-metier">Métier</label><select id="filtre-metier"><option value="tous">Tous les métiers</option></select></div>
+      <div class="champ-filtre"><label for="filtre-ville">Ville</label><select id="filtre-ville"><option value="toutes">Toutes les villes</option></select></div>
+      <label class="interrupteur"><input type="checkbox" id="filtre-dispo" checked><span class="interrupteur-glisseur"></span>Disponibles</label>
+      <button class="btn btn-contour btn-petit" id="btn-reset-filtres">↺ Réinitialiser</button>
+    </div>
+    <div id="compte-pros" class="compte-resultats"></div>
+    <div class="grille-pros" id="grille-pros"></div>
+    <div id="etat-vide" class="etat-vide" hidden>
+      <div class="etat-vide-icone">🔎</div>
+      <p>Aucun professionnel ne correspond à ces filtres pour l'instant.</p>
+      <button class="btn btn-orange js-ouvrir-prestation">Déposer une demande</button>
+    </div>
+    <div class="centre mt-32"><button class="btn btn-contour" id="btn-voir-plus">Voir plus ↓</button></div>
+  </div>
+</section>
+
+<section id="devenir-pro" class="section reveal">
+  <div class="conteneur">
+    <div class="grille-pro">
+      <div>
+        <div class="eyebrow eyebrow-orange">Espace professionnel</div>
+        <h2>Vous êtes artisan ou professionnel ?</h2>
+        <p class="lead">Rejoignez Mille Métiers. Vous faites plusieurs choses ? Cochez toutes vos compétences !</p>
+        <ul class="liste-avantages">
+          <li>👁️ Un profil visible par les clients de votre zone</li>
+          <li>🆓 Inscription gratuite, sans abonnement</li>
+        </ul>
+        <button class="btn btn-orange btn-grand js-ouvrir-pro">S'inscrire gratuitement</button>
+      </div>
+      <div class="pro-visuel">
+        <div class="banniere-lancement">🎉 INSCRIPTION GRATUITE</div>
+        <div class="pro-mosaique">
+          <div class="pro-mosaique-emojis">🛠️  🧵 🍲 </div>
+          <h3>Plus de 20 métiers représentés</h3>
+          <p>Plombiers, nounous polyvalentes, chauffeurs… rejoignent la plateforme chaque semaine.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="comment" class="section section-grise reveal">
+  <div class="conteneur">
+    <div class="entete-section centre"><h2>Comment ça marche ?</h2></div>
+    <div class="etapes">
+      <div class="etape"><div class="etape-num">1</div><h3>Vous faites votre demande</h3><p>Décrivez votre besoin en 2 minutes.</p></div>
+      <div class="etape"><div class="etape-num">2</div><h3>Nous recherchons</h3><p>Nous cherchons un pro disponible.</p></div>
+      <div class="etape"><div class="etape-num">3</div><h3>Un pro accepte</h3><p>Il confirme sa disponibilité.</p></div>
+      <div class="etape"><div class="etape-num">4</div><h3>Mise en relation</h3><p>Contact direct. C'est réglé !</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section reveal">
+  <div class="conteneur conteneur-etroit">
+    <div class="entete-section centre"><h2>Questions fréquentes</h2></div>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Combien coûte l'inscription ?<span class="faq-icone">+</span></button>
+        <div class="faq-reponse"><p>L'inscription est totalement gratuite.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Mon besoin n'est pas dans la liste, que faire ?<span class="faq-icone">+</span></button>
+        <div class="faq-reponse"><p>Cliquez sur "Faire une demande" et choisissez "Autre besoin". Décrivez ce que vous cherchez, nous trouverons la bonne personne !</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="conteneur">
+    <div class="grille-footer">
+      <div class="footer-col logo-footer">
+        <a href="#accueil" class="logo"><div class="logo-marque">M<span class="pt"></span></div><div class="logo-texte"><strong>MILLE MÉTIERS</strong></div></a>
+        <p class="footer-slogan">« Le bon professionnel au bon moment. »</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+221772051466">📞 +221 77 205 14 66</a>
+        <a href="https://wa.me/221772051466" class="wa-lien footer-wa">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bas">© 2026 MILLE MÉTIERS — Prototype.</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/221772051466" class="wa-float wa-lien"><span class="wa-libelle">Besoin d'aide ?</span><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+<div id="toasts"></div>
+
+<!-- MODALES -->
+<div class="modale-fond" id="modale-conditions" aria-hidden="true">
+  <div class="modale">
+    <button class="modale-fermer">✕</button>
+    <div class="modale-tete"><h3>Transparence totale</h3><p class="modale-soustitre">Pas de mauvaises surprises</p></div>
+    <div id="conditions-contenu" style="font-size: 0.95rem; color: var(--gris); line-height: 1.6;"></div>
+    <button class="btn btn-orange btn-bloc" id="btn-accepter-conditions" style="margin-top: 20px;">J'AI COMPRIS, CONTINUER</button>
+  </div>
+</div>
+
+<div class="modale-fond" id="modale-prestation" aria-hidden="true">
+  <div class="modale">
+    <button class="modale-fermer">✕</button>
+    <div class="modale-tete"><h3>🔧 Trouver un professionnel</h3></div>
+    <div class="prog-coque"><div class="prog-barre" id="prog-barre"></div></div>
+    <ul class="prog-etapes" id="prog-etapes"><li data-etape="1" class="actif">Métier</li><li data-etape="2">Ville</li><li data-etape="3">Quartier</li><li data-etape="4">Détails</li></ul>
+    <div id="corps-prestation">
+      <div id="pas-1">
+        <p class="pas-question">Quel professionnel recherchez-vous ?</p>
+        <div class="grille-chips" id="chips-metier"></div>
+        <button type="button" class="btn btn-contour btn-bloc" id="btn-autre-besoin" style="margin-top: 15px;" onclick="toggleAutreBesoin()">✨ Mon besoin n'est pas dans la liste</button>
+        <div id="autre-besoin-container" class="champ" style="display:none; margin-top: 15px;">
+          <label>Précisez votre besoin *</label>
+          <input type="text" id="champ-autre-besoin" placeholder="Ex: Nettoyeur de piscine, monteur de meubles...">
+        </div>
+        <div class="pas-pied"><button class="btn btn-orange" id="suiv-1" disabled>Suivant →</button></div>
+      </div>
+      <div id="pas-2" hidden><p class="pas-question">Dans quelle ville ?</p><div class="grille-chips" id="chips-ville"></div><div class="pas-pied"><button class="btn btn-contour" id="retour-2">← Retour</button><button class="btn btn-orange" id="suiv-2" disabled>Suivant →</button></div></div>
+      <div id="pas-3" hidden><p class="pas-question">Et dans quel quartier ?</p><div class="champ"><input type="text" id="champ-quartier" placeholder="Votre quartier"></div><div id="indice-match"></div><div class="pas-pied"><button class="btn btn-contour" id="retour-3">← Retour</button><button class="btn btn-orange" id="suiv-3">Continuer →</button></div></div>
+      <div id="pas-4" hidden>
+        <form id="form-prestation">
+          <div id="resume-demande" class="resume-demande"></div>
+          <input type="hidden" id="p-metier-ro"><input type="hidden" id="p-ville-ro"><input type="hidden" id="p-quartier-ro">
+          <div class="ligne-champs"><div class="champ"><label>Nom *</label><input type="text" id="p-nom" required></div><div class="champ"><label>Téléphone *</label><input type="tel" id="p-tel" required></div></div>
+          <div class="champ"><label>WhatsApp</label><input type="tel" id="p-wa" placeholder="Pour vous contacter rapidement"></div>
+          <div class="champ"><label>Description du besoin *</label><textarea id="p-desc" rows="3" required></textarea></div>
+          <button type="submit" class="btn btn-orange btn-bloc" id="btn-envoi-prestation">Envoyer ma demande</button>
+          <p class="mention-paiement">💡 Frais de mise en relation client : 2 000 FCFA (payable uniquement si un pro accepte).</p>
+        </form>
+      </div>
+    </div>
+    <div id="succes-prestation" class="succes" hidden><div class="succes-icone"><svg viewBox="0 0 88 88"><circle cx="44" cy="44" r="40"/><path d="M26 44l12 12 24-24"/></svg></div><h3>Demande enregistrée !</h3><button class="btn btn-contour" onclick="fermerModales()">Fermer</button></div>
+  </div>
+</div>
+
+<div class="modale-fond" id="modale-placement" aria-hidden="true">
+  <div class="modale">
+    <button class="modale-fermer">✕</button>
+    <div class="modale-tete"><h3>👤 Je recherche une personne</h3></div>
+    <div id="corps-placement">
+      <form id="form-placement">
+        <div class="ligne-champs"><div class="champ"><label>Nom *</label><input type="text" id="pl-nom" required></div><div class="champ"><label>Téléphone *</label><input type="tel" id="pl-tel" required></div></div>
+        <div class="champ"><label>WhatsApp</label><input type="tel" id="pl-wa" placeholder="Pour vous contacter rapidement"></div>
+        <div class="ligne-champs"><div class="champ"><label>Ville *</label><select id="pl-ville" required><option value="">— Choisir —</option></select></div><div class="champ"><label>Type de personne *</label>
+            <select id="pl-type" required onchange="toggleAutreProfil(this)">
+              <option value="">— Choisir —</option>
+              <option value="Nounou">Nounou</option>
+              <option value="Aide-ménagère">Aide-ménagère</option>
+              <option value="Gardien">Gardien</option>
+              <option value="Chauffeur">Chauffeur</option>
+              <option value="Cuisinier">Cuisinier / Cuisinière</option>
+              <option value="Autre">✨ Autre profil</option>
+            </select>
+          </div>
+        </div>
+        
+        <div id="autre-profil-container" class="champ" style="display:none;">
+          <label>Quel profil recherchez-vous ? *</label>
+          <input type="text" id="pl-autre-type" placeholder="Ex: Femme de ménage, jardinier...">
+        </div>
+
+        <div class="champ">
+          <label>Compétences supplémentaires (Polyvalence)</label>
+          <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:5px;">
+            <label class="mini-case"><input type="checkbox" name="extra_skills" value="repassage"> 👔 Repassage</label>
+            <label class="mini-case"><input type="checkbox" name="extra_skills" value="cuisine"> 🍲 Cuisine</label>
+            <label class="mini-case"><input type="checkbox" name="extra_skills" value="menage"> 🧹 Ménage</label>
+          </div>
+        </div>
+
+        <div class="champ"><label>Description du besoin *</label><textarea id="pl-desc" rows="3" required></textarea></div>
+        <button type="submit" class="btn btn-marine btn-bloc" id="btn-envoi-placement">Déposer ma demande</button>
+        <p class="mention-paiement">ℹ️ Frais de mise en relation client : 10 000 FCFA (payable uniquement lors de la validation du candidat).</p>
+      </form>
+    </div>
+    <div id="succes-placement" class="succes" hidden><div class="succes-icone"><svg viewBox="0 0 88 88"><circle cx="44" cy="44" r="40"/><path d="M26 44l12 12 24-24"/></svg></div><h3>Demande enregistrée !</h3><button class="btn btn-contour" onclick="fermerModales()">Fermer</button></div>
+  </div>
+</div>
+
+<div class="modale-fond" id="modale-pro" aria-hidden="true">
+  <div class="modale">
+    <button class="modale-fermer">✕</button>
+    <div class="banniere-gratuit">🎉 INSCRIPTION GRATUITE</div>
+    <div class="modale-tete"><h3>Rejoignez Mille Métiers</h3></div>
+    <div id="corps-pro">
+      <form id="form-pro">
+        <div class="ligne-champs"><div class="champ"><label>Nom complet *</label><input type="text" id="pr-nom" required></div><div class="champ"><label>Téléphone *</label><input type="tel" id="pr-tel" required></div></div>
+        <div class="champ"><label>WhatsApp *</label><input type="tel" id="pr-wa" required placeholder="Très important pour recevoir les demandes"></div>
+        
+        <div class="champ">
+          <label>Vos compétences * (Cochez tout ce que vous savez faire)</label>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:5px;">
+            <label class="mini-case"><input type="checkbox" name="pr_skills" value="nounou"> 👶 Nounou</label>
+            <label class="mini-case"><input type="checkbox" name="pr_skills" value="repassage"> 👔 Repassage</label>
+            <label class="mini-case"><input type="checkbox" name="pr_skills" value="cuisine"> 🍲 Cuisine</label>
+            <label class="mini-case"><input type="checkbox" name="pr_skills" value="menage"> 🧹 Ménage</label>
+            <label class="mini-case"><input type="checkbox" name="pr_skills" value="plombier"> 🚿 Plombier</label>
+            <label class="mini-case"><input type="checkbox" name="pr_skills" value="electricien"> ⚡ Électricien</label>
+            <label class="mini-case"><input type="checkbox" name="pr_skills" value="autre" id="pr-skill-autre"> ✨ Autre métier</label>
+          </div>
+        </div>
+        <div id="custom-skill-container" class="champ" style="display:none">
+          <label>Précisez votre autre métier *</label>
+          <input type="text" id="pr-custom-skill" placeholder="Ex: Tressage, Teinture, Maçonnerie...">
+        </div>
+
+        <div class="ligne-champs">
+          <div class="champ"><label>Ville *</label><select id="pr-ville" required><option value="">— Choisir —</option></select></div>
+          <div class="champ"><label>Expérience</label>
+            <select id="pr-exp">
+              <option value="moins_1">Moins d'1 an</option>
+              <option value="1_3">1 à 3 ans</option>
+              <option value="3_5">3 à 5 ans</option>
+              <option value="plus_5">Plus de 5 ans</option>
+            </select>
+          </div>
+        </div>
+        <div class="champ"><label>Parlez-nous de vous *</label><textarea id="pr-desc" rows="3" required placeholder="Ex: Je suis nounou mais je peux aussi faire le repassage et la cuisine..."></textarea></div>
+        <div class="case-cond"><label class="mini-case"><input type="checkbox" id="pro-cond" required> J'accepte les conditions *</label></div>
+        <button type="submit" class="btn btn-orange btn-bloc" id="btn-envoi-pro">Finaliser l'inscription</button>
+      </form>
+    </div>
+    <div id="succes-pro" class="succes" hidden><div class="succes-icone"><svg viewBox="0 0 88 88"><circle cx="44" cy="44" r="40"/><path d="M26 44l12 12 24-24"/></svg></div><h3>Bienvenue !</h3><button class="btn btn-contour" onclick="fermerModales()">Fermer</button></div>
+  </div>
+</div>
+
+<div class="modale-fond" id="modale-metiers" aria-hidden="true">
+  <div class="modale">
+    <button class="modale-fermer">✕</button>
+    <div class="modale-tete"><h3>Tous les métiers</h3></div>
+    <div id="liste-tous-metiers"></div>
+  </div>
+</div>
+
+<!-- 🔥 CHEMIN JS CORRIGÉ POUR RENDER -->
+<script src="js/app.js"></script>
+</body>
+</html>
