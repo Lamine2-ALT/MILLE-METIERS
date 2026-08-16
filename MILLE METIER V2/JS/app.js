@@ -432,17 +432,6 @@ function activerReveals() {
   }, { threshold: 0.12 });
   elements.forEach((el) => observateur.observe(el));
 }
-
-const btnMenu = $("#btn-menu");
-const menuMobile = $("#menu-mobile");
-if (btnMenu && menuMobile) {
-  btnMenu.addEventListener("click", () => {
-    const ouvert = menuMobile.classList.toggle("ouvert");
-    btnMenu.classList.toggle("ouvert", ouvert);
-  });
-  menuMobile.addEventListener("click", (e) => { if (e.target.tagName === "A" || e.target.tagName === "BUTTON") { menuMobile.classList.remove("ouvert"); btnMenu.classList.remove("ouvert"); } });
-}
-
 function surDefilement() {
   const entete = $("#entete");
   if (entete) entete.classList.toggle("deroule", window.scrollY > 8);
