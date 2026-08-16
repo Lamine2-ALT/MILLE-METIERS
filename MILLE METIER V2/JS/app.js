@@ -476,4 +476,30 @@ function initialiser() {
   const skillAutre = $("#pr-skill-autre");
   if (skillAutre) skillAutre.addEventListener("change", function() { toggleCustomSkill(this); });
 }
+/* ==========================================================
+   GESTION DU MENU MOBILE (BURGER)
+========================================================== */
+const btnMenu = $("#btn-menu");
+const menuMobile = $("#menu-mobile");
+
+if (btnMenu && menuMobile) {
+  btnMenu.addEventListener("click", () => {
+    // Ouvre/Ferme le menu
+    const estOuvert = menuMobile.classList.toggle("ouvert");
+    
+    // Anime le bouton burger (optionnel, si vous avez les classes CSS)
+    btnMenu.classList.toggle("ouvert", estOuvert);
+    
+    // Accessibilité
+    btnMenu.setAttribute("aria-expanded", estOuvert);
+  });
+
+  // Fermer le menu quand on clique sur un lien
+  menuMobile.querySelectorAll("a").forEach(lien => {
+    lien.addEventListener("click", () => {
+      menuMobile.classList.remove("ouvert");
+      btnMenu.classList.remove("ouvert");
+    });
+  });
+}
 document.addEventListener("DOMContentLoaded", initialiser);
