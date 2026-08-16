@@ -6,7 +6,7 @@ const WA_NUMERO = "221772051466";
 function lienWA(message) { return `https://wa.me/${WA_NUMERO}?text=${encodeURIComponent(message)}`; }
 
 // 🔥 VOTRE URL GOOGLE APPS SCRIPT
-const URL_GOOGLE_SHEET = "https://script.google.com/macros/s/AKfycbx7BVjqYrTRQKAlxCps2TwLN4OJ6vJIcvvID3tCAbiYGXnsmH-ifWCcaSwO2Te6jx7Q/exec";
+const URL_GOOGLE_SHEET = "https://script.google.com/macros/s/AKfycbxwMjKpl-Kxk1FNvrSDJQL31m3vnatAkeONxPalYu_3rcYyAEcMybqOfpqNPl0jRDwp/exec";
 
 async function envoyerDonnees(donnees) {
   if (!URL_GOOGLE_SHEET) return;
