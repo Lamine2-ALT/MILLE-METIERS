@@ -40,8 +40,7 @@ const PROS = [
   { nom: "Fatou Ndiaye", telephone: "771112233", metier: "nounou", skills: ["nounou", "repassage", "cuisine"], ville: "Dakar", quartier: "Almadies", dispo: true, note: 5.0, exp: 5, badge: "Top avis", complementSkill: "Repassage & ménage" },
   { nom: "Oumar Diop", telephone: "774445566", metier: "plombier", skills: ["plombier"], ville: "Dakar", quartier: "Parcelles", dispo: true, note: 4.8, missions: 12 },
   { nom: "Moussa Fall", telephone: "773456703", metier: "electricien", skills: ["electricien"], ville: "Thiès", quartier: "Centre", dispo: true, note: 4.5, missions: 28 },
-  { nom: "Ouleye Fall", telephone: "778876874", metier: "nounou", skills: ["nounou", "cuisine", "menage"], ville: "Dakar", quartier: " ", dispo: true, note: 5.0, exp: 5, badge: "Top avis", complementSkill: "caissière vendeuse" },
-  { nom: "Esda OVA", telephone: "781098629", metier: "nounou", skills: ["nounou"], ville: "Dakar", quartier: " ", dispo: true, badge: "nouveau" }
+  { nom: "Ouleye Fall", telephone: "778876874", metier: "nounou", skills: ["nounou", "cuisine", "menage"], ville: "Dakar", quartier: " ", dispo: true, note: 5.0, exp: 5, badge: "Top avis", complementSkill: "caissière vendeuse" }
 ];
 
 const TEINTES = ["#0E5AA7", "#F0791F", "#17995F", "#8A5A2B"];
